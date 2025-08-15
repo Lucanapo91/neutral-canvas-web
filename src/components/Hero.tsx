@@ -1,15 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-subtle overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
+    <section className="relative min-h-screen flex items-center bg-background overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 to-background opacity-80" />
       
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -60,11 +56,11 @@ const Hero = () => {
 
           {/* Visual Element */}
           <div className="relative">
-            <div className="bg-card rounded-2xl shadow-medium p-8 border border-border">
+            <div className="bg-card rounded-2xl shadow-lg p-8 border border-border">
               <div className="space-y-6">
                 <div className="h-4 bg-muted rounded w-3/4"></div>
                 <div className="h-4 bg-muted rounded w-1/2"></div>
-                <div className="h-32 bg-gradient-section rounded-lg"></div>
+                <div className="h-32 bg-secondary/50 rounded-lg"></div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="h-16 bg-muted rounded"></div>
                   <div className="h-16 bg-accent/20 rounded"></div>

@@ -26,7 +26,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="servizi" className="py-20 bg-gradient-section">
+    <section id="servizi" className="py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -44,7 +44,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border-border/50"
+              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border/50"
             >
               <CardHeader className="text-center">
                 <div className="mx-auto w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors duration-300">
